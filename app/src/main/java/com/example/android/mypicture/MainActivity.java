@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private class MainAsyncTask extends AsyncTask<String, Void, Drawable> {
         @Override
         protected Drawable doInBackground(String... args) {
-            String url = args[5];
+            String url = args[0];
             Drawable result = QueryUtils.fetchImage(url);
             return result;
         }
